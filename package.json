@@ -50,7 +50,7 @@
     "@types/node": "^20.10.0",
     "@typescript-eslint/eslint-plugin": "^6.13.0",
     "@typescript-eslint/parser": "^6.13.0",
-    "@vitest/coverage-v8": "^1.0.4",
+    "@vitest/coverage-v8": "^4.0.15",
     "eslint": "^8.55.0",
     "tsup": "^8.0.1",
     "tsx": "^4.6.2",
