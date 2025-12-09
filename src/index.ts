@@ -124,3 +124,18 @@ program
   });
 
 program.parse();
+
+process.on('SIGINT', () => {
+  console.log('\nInterrupted. Cleaning up and exiting…')
+  process.exit(0)
+})
+
+process.on('SIGTERM', () => {
+  console.log('\nTerminated. Cleaning up and exiting…')
+  process.exit(0)
+})
+
+process.on('SIGQUIT', () => {
+  console.log('\nQuitted. Cleaning up and exiting…')
+  process.exit(0)
+})
