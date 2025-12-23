@@ -85,7 +85,9 @@ describe('HomebrewScanner', () => {
   });
 
   it('should handle brew cleanup failure', async () => {
-    mockExecAsync.mockRejectedValue(new Error('cleanup failed'));
+    mockExecAsync
+      .mockResolvedValueOnce({ stdout: '/usr/local/Homebrew/cache\n', stderr: '' })
+      .mockRejectedValueOnce(new Error('cleanup failed'));
 
     const items = [
       { path: '/usr/local/Homebrew/cache', size: 1000, name: 'Homebrew Cache', isDirectory: true },
