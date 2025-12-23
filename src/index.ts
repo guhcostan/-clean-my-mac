@@ -41,7 +41,7 @@ program
         noProgress: !options.progress,
       });
     } catch (error) {
-      handleCleanExit(error)
+      handleCleanExit(error);
     }
   });
 
@@ -59,7 +59,7 @@ program
         noProgress: !options.progress,
       });
     } catch (error) {
-      handleCleanExit(error)
+      handleCleanExit(error);
     }
   });
 
